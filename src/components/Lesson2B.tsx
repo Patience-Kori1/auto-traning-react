@@ -14,7 +14,7 @@ function MyButton({ title, disabled }: MyButtonProps) {
 export default function Lesson2B () {
   return (
     <div>
-      <h2>Welcome to my app</h2>
+      <p>Ici on parle du typage des composants react en utilisant l'objet interface pour le typage des props. L'objet interface est placé au dessus de la fonction du composant ou peut etre placé dans un autre fichier.</p>
       <MyButton title="I'm a disabled button" disabled={true}/>
     </div>
   );
