@@ -2,11 +2,19 @@ import React from 'react'
 import {useState} from 'react'
 
 function Lesson2C() {
-    // Infère le type "boolean"
-    const [enabled, setEnabled] = useState(false);
+  // Infère le type "boolean"
+  const [enabled, setEnabled] = useState(false);
 
-    // Typage explicite à "boolean"
-    const [enabledd, setEnabledd] = useState<boolean>(false);
+  // Typage explicite à "boolean"
+  const [enabledd, setEnabledd] = useState<boolean>(false);
+
+  // vous pouvez grouper des éléments d’état étroitement liés dans un objet et en décrire les différentes configurations via une union discriminante
+    type RequestState =
+  | { status: 'idle' }
+  | { status: 'loading' }
+  | { status: 'success', data: any }
+  | { status: 'error', error: Error };
+  const [requestState, setRequestState] = useState<RequestState>({ status: 'idle' });
     
   return (
     <div>
