@@ -3,10 +3,13 @@ import Lesson2 from "./components/Lesson2"
 import Lesson2B from "./components/Lesson2B"
 import Lesson2C from "./components/Lesson2C"
 import Lesson2D from "./components/Lesson2D"
+import Lesson2E_A from "./components/Lesson2E_A"
 import './index.css'
 export default function App() {
   return(
     <>
+      <h2> Lesson 2D : Typage du hook useContext</h2>
+      <Lesson2E_A/>
       <h2> Lesson 2D : Typage du hook useReduce</h2>
       <Lesson2D/>
       <h2> Lesson 2C : Typage implicite du hook useState</h2>
