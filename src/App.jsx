@@ -1,9 +1,9 @@
-import Gallery from "./components/lesson1"
-import Lesson2 from "./components/Lesson2"
-import Lesson2B from "./components/Lesson2B"
-import Lesson2C from "./components/Lesson2C"
-import Lesson2D from "./components/Lesson2D"
-import Lesson2E_A from "./components/Lesson2E_A"
+import Gallery from "./components/I_Installation/lesson1"
+import Lesson2 from "./components/I_Installation/Lesson2"
+import Lesson2B from "./components/I_Installation/Lesson2B"
+import Lesson2C from "./components/I_Installation/Lesson2C"
+import Lesson2D from "./components/I_Installation/Lesson2D"
+import Lesson2E_A from "./components/I_Installation/Lesson2E_A"
 import './index.css'
 export default function App() {
   return(
