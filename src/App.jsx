@@ -5,12 +5,18 @@ import Lesson2B from "./components/I_Installation/Lesson2B"
 import Lesson2C from "./components/I_Installation/Lesson2C"
 import Lesson2D from "./components/I_Installation/Lesson2D"
 import Lesson2E_A from "./components/I_Installation/Lesson2E_A"
+import { Import_Export_Components } from "./components/2_Describing_UI/2_Import_Export_Components"
 import './index.css'
 export default function App() {
   return(
   <>
     <>{/* Section II. Décrire L'UI*/}
-      <FirstComponent/>
+      <>{/* Importer et exporter des composants*/}
+        <Import_Export_Components/>
+      </>
+      <>{/* Mon premier composant*/}
+        {/* <FirstComponent/> */}
+      </>
     </>
     <>{/* Section I. Installation*/}
       
