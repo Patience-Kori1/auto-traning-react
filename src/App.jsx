@@ -1,18 +1,24 @@
-import FirstComponent from "./components/2_Describing_UI/1_FirstComponent"
+
 import Gallery from "./components/I_Installation/lesson1"
 import Lesson2 from "./components/I_Installation/Lesson2"
 import Lesson2B from "./components/I_Installation/Lesson2B"
 import Lesson2C from "./components/I_Installation/Lesson2C"
 import Lesson2D from "./components/I_Installation/Lesson2D"
 import Lesson2E_A from "./components/I_Installation/Lesson2E_A"
+import FirstComponent from "./components/2_Describing_UI/1_FirstComponent"
 import { Import_Export_Components } from "./components/2_Describing_UI/2_Import_Export_Components"
+import Markup_With_Jsx from "./components/2_Describing_UI/3_Markup_With_Jsx.jsx"
+
 import './index.css'
 export default function App() {
   return(
   <>
     <>{/* Section II. Décrire L'UI*/}
       <>{/* Importer et exporter des composants*/}
-        <Import_Export_Components/>
+        <Markup_With_Jsx/>
+      </>
+      <>{/* Importer et exporter des composants*/}
+        {/* <Import_Export_Components/> */}
       </>
       <>{/* Mon premier composant*/}
         {/* <FirstComponent/> */}
