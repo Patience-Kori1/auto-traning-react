@@ -8,14 +8,18 @@ import Lesson2E_A from "./components/I_Installation/Lesson2E_A"
 import FirstComponent from "./components/2_Describing_UI/1_FirstComponent"
 import { Import_Export_Components } from "./components/2_Describing_UI/2_Import_Export_Components"
 import Markup_With_Jsx from "./components/2_Describing_UI/3_Markup_With_Jsx.jsx"
+import Avatar from "./components/2_Describing_UI/4_JS_In_JSX_Accolades.jsx"
 
 import './index.css'
 export default function App() {
   return(
   <>
     <>{/* Section II. Décrire L'UI*/}
+       <>{/* Importer et exporter des composants*/}
+        <Avatar/>
+      </>
       <>{/* Importer et exporter des composants*/}
-        <Markup_With_Jsx/>
+        {/* <Markup_With_Jsx/> */}
       </>
       <>{/* Importer et exporter des composants*/}
         {/* <Import_Export_Components/> */}
