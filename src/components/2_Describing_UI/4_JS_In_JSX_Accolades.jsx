@@ -1,26 +1,25 @@
-export default function Avatar() {
-    const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
-    const description = 'Gregorio Y. Zara';
-    const name = 'Hedy Lamarr';
-    const today = new Date();
+const person = {
+  name: 'Gregorio Y. Zara',
+  theme: {
+    backgroundColor: 'black',
+    color: 'pink'
+  }
+};
 
-    function formatDate(date) {
-    return new Intl.DateTimeFormat(
-        'fr-FR',
-        { weekday: 'long' }
-    ).format(date);
-    }
-
+export default function TodoList() {
   return (
-    <>
-    <img
+    <div style={person.theme}>
+      <h1>Liste des tâches de {person.name}</h1>
+      <img
         className="avatar"
-        src={avatar}
-        alt={description}
-        />
-
-        <h3>Liste des tâches de {name} </h3>
-        <h1>Liste de tâches pour {formatDate(today)}</h1>
-    </>
+        src="https://i.imgur.com/7vQD0fPs.jpg"
+        alt="Gregorio Y. Zara"
+      />
+      <ul>
+        <li>Améliorer le visiophone</li>
+        <li>Préparer les cours d’aéronautique</li>
+        <li>Travailler sur un moteur à alcool</li>
+      </ul>
+    </div>
   );
 }
