@@ -1,25 +1,55 @@
-const person = {
-  name: 'Gregorio Y. Zara',
-  theme: {
-    backgroundColor: 'black',
-    color: 'pink'
-  }
-};
+export default function Avatar() {
+  const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
+  const description = 'Gregorio Y. Zara';
+  const name = 'Hedy Lamarr';
+  const today = new Date();
 
-export default function TodoList() {
+  const person = {
+    name: 'Gregorio Y. Zara',
+    theme: {
+      backgroundColor: 'black',
+      color: 'pink'
+    }
+  };
+
+  function formatDate(date) {
+    return new Intl.DateTimeFormat(
+      'fr-FR',
+      { weekday: 'long' }
+    ).format(date);
+  }
+
   return (
-    <div style={person.theme}>
-      <h1>Liste des tâches de {person.name}</h1>
-      <img
-        className="avatar"
-        src="https://i.imgur.com/7vQD0fPs.jpg"
-        alt="Gregorio Y. Zara"
-      />
-      <ul>
-        <li>Améliorer le visiophone</li>
-        <li>Préparer les cours d’aéronautique</li>
-        <li>Travailler sur un moteur à alcool</li>
-      </ul>
-    </div>
+    <>
+        <img
+            className="avatar"
+            src={avatar}
+            alt={description}
+        />
+
+        <h3>Liste des tâches de {name} </h3>
+        <h3>Ce {formatDate(today)} on appris comment : </h3>
+
+        <ul style={person.theme}
+        >
+          <li>passer des chaînes de caractères grâce aux guillemets </li>
+          <li>référencer une variable JavaScript dans du JSX grâce aux accolades.</li>
+          <li>appeler une fonction JavaScript dans du JSX grâce aux accolades.</li>
+          <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
+        </ul>
+
+        <h3>Liste de tâches pour {formatDate(today)}</h3>
+        <ul style={{
+            backgroundColor: 'black',
+            color: 'pink'
+          }}
+        >
+          <li>Améliorer le visiophone { person.name} </li>
+          <li>Préparer les cours d’aéronautique</li>
+          <li>Travailler sur un moteur à alcool</li>
+        </ul>
+
+        
+    </>
   );
 }
