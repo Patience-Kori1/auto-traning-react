@@ -8,23 +8,27 @@ import Lesson2E_A from "./components/I_Installation/Lesson2E_A"
 import FirstComponent from "./components/2_Describing_UI/1_FirstComponent"
 import { Import_Export_Components } from "./components/2_Describing_UI/2_Import_Export_Components"
 import Markup_With_Jsx from "./components/2_Describing_UI/3_Markup_With_Jsx.jsx"
-import Avatar from "./components/2_Describing_UI/4_JS_In_JSX_Accolades.jsx"
+import JS_In_JSX_Accolades from "./components/2_Describing_UI/4_JS_In_JSX_Accolades.jsx"
+import Passer_Props_A_Composant from "./components/2_Describing_UI/5_Passer_Props_Composant.jsx"
 
 import './index.css'
 export default function App() {
   return(
   <>
     <>{/* Section II. Décrire L'UI*/}
-       <>{/* Importer et exporter des composants*/}
-        <Avatar/>
+      <>{/* 5. Passer des props à un composant*/}
+        <Passer_Props_A_Composant/>
       </>
-      <>{/* Importer et exporter des composants*/}
+      <>{/* 4. JavaScript dans JSX grace aux accolades*/}
+        {/* <JS_In_JSX_Accolades/> */}
+      </>
+      <>{/* 3. Ecrire du balisage avec JSX*/}
         {/* <Markup_With_Jsx/> */}
       </>
-      <>{/* Importer et exporter des composants*/}
+      <>{/* 2. Importer et exporter des composants*/}
         {/* <Import_Export_Components/> */}
       </>
-      <>{/* Mon premier composant*/}
+      <>{/* 1. Mon premier composant*/}
         {/* <FirstComponent/> */}
       </>
     </>

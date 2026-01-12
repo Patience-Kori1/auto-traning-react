@@ -1,4 +1,4 @@
-export default function Avatar() {
+export default function JS_In_JSX_Accolades() {
   const avatar = 'https://i.imgur.com/7vQD0fPs.jpg';
   const description = 'Gregorio Y. Zara';
   const name = 'Hedy Lamarr';
@@ -30,7 +30,7 @@ export default function Avatar() {
         <h3>Liste des tâches de {name} </h3>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
 
-        <ul style={person.theme}
+        <ul style={person.theme} 
         >
           <li>passer des chaînes de caractères grâce aux guillemets </li>
           <li>référencer une variable JavaScript dans du JSX grâce aux accolades.</li>
@@ -47,9 +47,7 @@ export default function Avatar() {
           <li>Améliorer le visiophone { person.name} </li>
           <li>Préparer les cours d’aéronautique</li>
           <li>Travailler sur un moteur à alcool</li>
-        </ul>
-
-        
+        </ul>   
     </>
   );
 }
