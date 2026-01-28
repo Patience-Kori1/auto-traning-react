@@ -20,6 +20,7 @@
 import { getImageUrl } from './support_files/Utils'
 
 function Avatar({ person, size }) {
+  // console.log(person)
   return (
     <img
       className="avatar"
@@ -30,6 +31,7 @@ function Avatar({ person, size }) {
     />
   );
 }
+
 
 export default function Passer_Props_A_Composant() {
   return (
