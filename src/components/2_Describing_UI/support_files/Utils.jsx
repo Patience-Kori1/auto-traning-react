@@ -8,7 +8,7 @@ export function getImageUrl(person, size = 's') {
 }
 
 // Notion de l'objet props comme objet contenant tous les props individuel
-function Avatar(props) {
+function Avatar1(props) {
   let person = props.person;
   let size = props.size;
   // ...
@@ -16,13 +16,17 @@ function Avatar(props) {
 
 // Notion de destructuration de l'objet props pour lister chaque prop en paramètre de la fx composant
 
-function Avatar(props) {
+function Avatar2(props) {
   let person = props.person;
   let size = props.size;
   // ...
 }
 
-function Avatar({ person, size }) {
+function Avatar3({ person, size }) {
   // ...
 }
 
+// Notion de spécification de valeur par défault d'un prop spécifique
+function Avatar({ person, size = 100 }) {
+  // ...
+}
