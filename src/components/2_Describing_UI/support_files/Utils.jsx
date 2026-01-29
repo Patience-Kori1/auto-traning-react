@@ -52,3 +52,9 @@ function Profile2(props) {
     </div>
   );
 }
+
+// Passer du JSX comme enfant
+
+<div>
+  <img />
+</div>

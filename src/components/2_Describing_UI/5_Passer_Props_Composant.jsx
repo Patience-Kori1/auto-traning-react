@@ -33,16 +33,26 @@ function Avatar({ person, size }) {
 }
 
 
+function Card({ children }) {
+  return (
+    <div style={{ backgroundColor:"red", width:120}}>
+      {children}
+    </div>
+  );
+}
+
 export default function Passer_Props_A_Composant() {
   return (
     <div>
-      <Avatar
-        size={100}
-        person={{
-          name: 'Katsuko Saruhashi',
-          imageId: 'YfeOqp2'
-        }}
-      />
+      <Card>
+        <Avatar
+          size={100}
+          person={{
+            name: 'Katsuko Saruhashi',
+            imageId: 'YfeOqp2'
+          }}
+        />
+      </Card>
       <Avatar
         size={80}
         person={{
