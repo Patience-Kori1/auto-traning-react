@@ -30,3 +30,25 @@ function Avatar3({ person, size }) {
 function Avatar({ person, size = 100 }) {
   // ...
 }
+
+//Notion de spread operator pour récupérer et renvovyer tous les props en paramètre 
+function Profile({ person, size, isSepia, thickBorder }) {
+  return (
+    <div className="card">
+      <Avatar
+        person={person}
+        size={size}
+        isSepia={isSepia}
+        thickBorder={thickBorder}
+      />
+    </div>
+  );
+}
+
+function Profile2(props) {
+  return (
+    <div className="card">
+      <Avatar {...props} /> {/* Voilà le spread */}
+    </div>
+  );
+}
