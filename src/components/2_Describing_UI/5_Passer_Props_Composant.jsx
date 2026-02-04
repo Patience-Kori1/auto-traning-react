@@ -17,7 +17,9 @@
 //   );
 // }
 
-import { getImageUrl } from './support_files/Utils'
+import { getImageUrl } from './support_files/for_5/Utils'
+import Gallery from './support_files/for_5/Gallery';
+import "./support_files/for_5/styles_for_5.css"
 
 function Avatar({ person, size }) {
   // console.log(person)
@@ -67,6 +69,7 @@ export default function Passer_Props_A_Composant() {
           imageId: '1bX5QH6'
         }}
       />
+      <Gallery/>
     </div>
   );
 }
