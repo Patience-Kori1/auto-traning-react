@@ -1,6 +1,6 @@
 import { getImageUrl } from './Utils';
 export default function Profile({personItem}) {
-
+    console.log(personItem.reward)
     return(
         <div className="profile">
             <h2>{personItem.name}</h2>
@@ -13,7 +13,7 @@ export default function Profile({personItem}) {
             />
             <ul>
                 <li><b>Profession : </b> {personItem.job}</li>
-                <li><b>Récompense : {personItem.rewardNumber} </b> {personItem.reward}</li>
+                <li><b>Récompense : {personItem.reward.length} </b> {personItem.reward.join(', ')}</li>
                 <li><b>A découvert :</b> {personItem.discovery}</li>
             </ul>
 
