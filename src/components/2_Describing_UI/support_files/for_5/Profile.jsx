@@ -1,6 +1,6 @@
 import { getImageUrl } from './Utils';
 export default function Profile({personItem}) {
-    console.log(personItem.reward)
+    // console.log(personItem.reward)
     return(
         <div className="profile">
             <h2>{personItem.name}</h2>

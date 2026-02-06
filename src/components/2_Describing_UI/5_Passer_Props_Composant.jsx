@@ -46,6 +46,9 @@ function Card({ children }) {
 export default function Passer_Props_A_Composant() {
   return (
     <div>
+      <h1>II. Défis</h1>
+      <Gallery/>
+      <h1>I. Cours</h1>
       <Card>
         <Avatar
           size={100}
@@ -69,7 +72,6 @@ export default function Passer_Props_A_Composant() {
           imageId: '1bX5QH6'
         }}
       />
-      <Gallery/>
     </div>
   );
 }

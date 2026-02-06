@@ -1,5 +1,6 @@
 import { getImageUrl } from './Utils';
 import Profile from './Profile';
+import Profile2 from './defis2_Ajuster_Taille_Image';
 
 export default function Gallery() {
 
@@ -11,17 +12,25 @@ export default function Gallery() {
   
   return (
     <div>
-      <h1>Scientifiques remarquables</h1>
-      {
-        person.map((personItem, index) => {
-          return(
-            <Profile
-              key= {index}
-              personItem={personItem}
-            />
-          )
-        })
-      }
+      <h2>B. Ajuster la taille d'une image</h2>
+      <div>
+        <h3></h3>
+        <Profile2/>
+      </div>
+      <h2>A. Extraire un composant</h2>
+      <div>
+        <h3>Scientifiques remarquables</h3>
+        {
+          person.map((personItem, index) => {
+            return(
+              <Profile
+                key= {index}
+                personItem={personItem}
+              />
+            )
+          })
+        }
+      </div>
     
     </div>
   );
