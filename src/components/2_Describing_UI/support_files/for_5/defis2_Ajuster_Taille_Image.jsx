@@ -1,25 +1,42 @@
-import { getImageUrl } from './Utils';
+import { getImageUrl } from './Utils2';
 
 function Avatar({ person, size }) {
+  let thumbnailSize = 's';
+  if (size > 90) {
+    thumbnailSize = 'b';
+  }
   return (
-    <img
-      className="avatar"
-      src={getImageUrl(person, 'b')}
-      alt={person.name}
-      width={size}
-      height={size}
-    />
+    <>
+        <img
+        className="avatar"
+        src={getImageUrl(person, thumbnailSize)}
+        alt={person.name}
+        width={size}
+        height={size}
+        />
+        {console.log(getImageUrl(person, thumbnailSize))}
+    </>
+    
   );
 }
 
 export default function Profile() {
   return (
-    <Avatar
-      size={40}
-      person={{
-        name: 'Gregorio Y. Zara',
-        imageId: '7vQD0fP'
-      }}
-    />
+    <>
+      <Avatar
+        size={40}
+        person={{
+          name: 'Gregorio Y. Zara',
+          imageId: '7vQD0fP'
+        }}
+      />
+      <Avatar
+        size={120}
+        person={{
+          name: 'Gregorio Y. Zara',
+          imageId: '7vQD0fP'
+        }}
+      />
+    </>
   );
 }
