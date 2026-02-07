@@ -1,6 +1,7 @@
 import { getImageUrl } from './Utils';
-import Profile from './Profile';
+import Profile from './defi_1_Extraire_Un_Composant';
 import Profile2 from './defis2_Ajuster_Taille_Image';
+import Profile3 from './defi_3_Passer_JSX_Prop_Children';
 
 export default function Gallery() {
 
@@ -12,6 +13,10 @@ export default function Gallery() {
   
   return (
     <div>
+      <h2> C. Passer du JSX dans la prop Children </h2>
+      <div>
+        <Profile3/>
+      </div>
       <h2>B. Ajuster la taille d'une image</h2>
       <div>
         <h3></h3>
