@@ -14,7 +14,7 @@ function Avatar({ person, size }) {
         width={size}
         height={size}
         />
-        {console.log(getImageUrl(person, thumbnailSize))}
+        {/* {console.log(getImageUrl(person, thumbnailSize))} */}
     </>
     
   );
