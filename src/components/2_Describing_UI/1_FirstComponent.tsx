@@ -25,6 +25,7 @@ export function Profile() {
   )
 }
 
+
 export default function Galery() {
   return (
     <>

@@ -1,4 +1,4 @@
-
+import "./App.css"
 import Gallery from "./components/I_Installation/lesson1"
 import Lesson2 from "./components/I_Installation/Lesson2"
 import Lesson2B from "./components/I_Installation/Lesson2B"
@@ -10,27 +10,32 @@ import { Import_Export_Components } from "./components/2_Describing_UI/2_Import_
 import Markup_With_Jsx from "./components/2_Describing_UI/3_Markup_With_Jsx.jsx"
 import JS_In_JSX_Accolades from "./components/2_Describing_UI/4_JS_In_JSX_Accolades.jsx"
 import Passer_Props_A_Composant from "./components/2_Describing_UI/5_Passer_Props_Composant.jsx"
+import Affichage_Conditionnel from "./components/2_Describing_UI/6_Affichage_Conditionnel.jsx"
 
 import './index.css'
 export default function App() {
   return(
   <>
+    <h1>Apprentisage React Personel à base de la doc</h1>
     <>{/* Section II. Décrire L'UI*/}
-      <>{/* 5. Passer des props à un composant*/}
+      <div className="chapter">{/* 6. Affichage Conditionnel*/}
+        <Affichage_Conditionnel/>
+      </div>
+      <div className="chapter">{/* 5. Passer des props à un composant*/}
         <Passer_Props_A_Composant/>
-      </>
-      <>{/* 4. JavaScript dans JSX grace aux accolades*/}
-        {/* <JS_In_JSX_Accolades/> */}
-      </>
-      <>{/* 3. Ecrire du balisage avec JSX*/}
-        {/* <Markup_With_Jsx/> */}
-      </>
-      <>{/* 2. Importer et exporter des composants*/}
-        {/* <Import_Export_Components/> */}
-      </>
-      <>{/* 1. Mon premier composant*/}
-        {/* <FirstComponent/> */}
-      </>
+      </div>
+      <div className="chapter">{/* 4. JavaScript dans JSX grace aux accolades*/}
+        <JS_In_JSX_Accolades/>
+      </div>
+      <div className="chapter">{/* 3. Ecrire du balisage avec JSX*/}
+        <Markup_With_Jsx/>
+      </div>
+      <div className="chapter">{/* 2. Importer et exporter des composants*/}
+        <Import_Export_Components/>
+      </div>
+      <div className="chapter">{/* 1. Mon premier composant*/}
+        <FirstComponent/>
+      </div>
     </>
     <>{/* Section I. Installation*/}
       
