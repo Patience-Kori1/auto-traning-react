@@ -48,7 +48,7 @@ ul {
 
 .avatar { margin: 5px; border-radius: 50%; min-height: 70px; }
 .profile {
-  border: 1px solid #aaa;
+  border: 1px solid #95702b;
   border-radius: 6px;
   margin-top: 20px;
   padding: 10px;
@@ -61,9 +61,9 @@ li { margin: 5px; }
   width: fit-content;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #aaa;
+  border: 1px solid #95702b;
   border-radius: 20px;
-  background: #fff;
+  background: #f7ebd4;
 }
 .card-content {
   text-align: center;

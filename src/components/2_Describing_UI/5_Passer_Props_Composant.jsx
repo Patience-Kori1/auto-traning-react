@@ -37,7 +37,7 @@ function Avatar({ person, size }) {
 
 function Card({ children }) {
   return (
-    <div style={{ backgroundColor:"red", width:120}}>
+    <div style={{ backgroundColor:"#ead6b2", width:120,  borderRadius: "20px"}}>
       {children}
     </div>
   );

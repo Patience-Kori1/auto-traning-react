@@ -5,14 +5,67 @@
   text-align: center;
 }
 
+.app-title {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin-bottom: 3rem;
+  color: #2c2c2c;
+  position: relative;
+}
+
+.app-title span {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-top: 0.5rem;
+  color: #8a5a2b;
+}
+
+.app-title::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 6px;
+  background: linear-gradient(
+    90deg,
+    rgb(196, 141, 69),
+    rgb(247, 241, 233)
+  );
+  margin: 1.5rem auto 0;
+  border-radius: 999px;
+}
+
 .chapter {
   background-color: rgb(247, 241, 233);
   border-radius: 1rem;
   margin-top: 1rem;
   border: 2px solid  rgb(196, 141, 69);
-  padding: 1rem;
+  padding: 1.5rem 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
+.chapter:hover { /* Pour faire un petit effet subtil quand on quitte la div de chaque chapitre*/
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+.chapter-title {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 1.2rem;
+  text-align: left;
+  color: rgb(196, 141, 69);
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.chapter-title::before {
+  content: "📘";
+  font-size: 1.4rem;
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
