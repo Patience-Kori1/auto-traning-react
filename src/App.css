@@ -66,6 +66,16 @@
   content: "📘";
   font-size: 1.4rem;
 }
+
+ul {
+  padding-inline-start: 20px;
+  /* background-color: #81cb87; */
+}
+
+li {
+  padding-inline-start: 20px;
+  /* background-color: #8a5a2b; */
+}
 /* .logo {
   height: 6em;
   padding: 1.5em;
