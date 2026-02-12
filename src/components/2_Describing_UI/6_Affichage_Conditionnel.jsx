@@ -8,10 +8,18 @@ function Item({ name, isPacked }) {
     // return <li className="item">{name}</li>;
 
     // 2. Rendu conditionnel avec une possibilité d'exclure en le rendant nulle ou inclure des portions de JSX
-    if (isPacked) {
-        return null;
-    }
-    return <li className="item">{name}</li>;
+    // if (isPacked) {
+    //     return null;
+    // }
+    // return <li className="item">{name}</li>;
+
+    // 3. Rendu conditionnel utilisant un ternaire avec la possibilité d'exclure et d'inclure en respectant le DRY sans aujouté aussi une nouvel branche dans le DOM
+    return (
+    <li className="item">
+        {isPacked ? name + ' ✅' : name}
+    </li>
+    );
+
 
 }
 
