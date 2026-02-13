@@ -14,13 +14,23 @@ function Item({ name, isPacked }) {
     // return <li className="item">{name}</li>;
 
     // 3. Rendu conditionnel utilisant un ternaire avec la possibilité d'exclure et d'inclure en respectant le DRY sans aujouté aussi une nouvel branche dans le DOM
+    // return (
+    //     <li className="item">
+    //         {isPacked ? name + ' ✅' : name}
+    //     </li>
+    // )
+
     return (
-    <li className="item">
-        {isPacked ? name + ' ✅' : name}
-    </li>
+        <li className="item">
+            {isPacked ? (
+                <del>
+                {name + ' ✅'}
+                </del>
+            ) : (
+                name
+            )}
+        </li>
     );
-
-
 }
 
 export default function Affichage_Conditionnel() {
@@ -30,7 +40,7 @@ export default function Affichage_Conditionnel() {
                 <h3>Liste d’affaires de Sally Ride</h3>
                 <ul>
                     <Item
-                        isPacked={false}
+                        isPacked={true}
                         name="Combinaison spatiale"
                     />
                     <Item
