@@ -20,15 +20,23 @@ function Item({ name, isPacked }) {
     //     </li>
     // )
 
+    // 4. Rendu avec balisages conditionnels imbriqués en utilisant le ternaire
+
+    // return (
+    //     <li className="item">
+    //         {isPacked ? (
+    //             <del>
+    //             {name + ' ✅'}
+    //             </del>
+    //         ) : (
+    //             name
+    //         )}
+    //     </li>
+    // );
+
     return (
         <li className="item">
-            {isPacked ? (
-                <del>
-                {name + ' ✅'}
-                </del>
-            ) : (
-                name
-            )}
+            {name} {isPacked && '✅'}
         </li>
     );
 }
