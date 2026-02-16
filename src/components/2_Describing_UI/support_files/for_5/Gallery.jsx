@@ -13,18 +13,18 @@ export default function Gallery() {
   
   return (
     <div>
-      <h2> C. Passer du JSX dans la prop Children </h2>
+      <h4> C. Passer du JSX dans la prop Children </h4>
       <div>
         <Profile3/>
       </div>
-      <h2>B. Ajuster la taille d'une image</h2>
+      <h4 >B. Ajuster la taille d'une image</h4>
       <div>
         <h3></h3>
         <Profile2/>
       </div>
-      <h2>A. Extraire un composant</h2>
+      <h4>A. Extraire un composant</h4>
       <div>
-        <h3>Scientifiques remarquables</h3>
+        <h4>Scientifiques remarquables</h4>
         {
           person.map((personItem, index) => {
             return(

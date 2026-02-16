@@ -46,9 +46,9 @@ function Card({ children }) {
 export default function Passer_Props_A_Composant() {
   return (
     <div>
-      <h1>II. Défis</h1>
+      <h3 className="lesson-title">II. Défis</h3>
       <Gallery/>
-      <h1>I. Cours</h1>
+      <h3 className="lesson-title">I. Cours</h3>
       <Card>
         <Avatar
           size={100}

@@ -75,7 +75,7 @@ export default function Affichage_Conditionnel() {
     return(
         <div>
             <section>
-                <h3>Liste d’affaires de Sally Ride</h3>
+                <h3 className="lesson-title">Liste d’affaires de Sally Ride</h3>
                 <ul>
                     <Item
                         isPacked={true}
