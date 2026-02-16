@@ -3,7 +3,7 @@ export default function Markup_With_Jsx() {
         <> 
         {/* Ces balises en bas ne marcherait pas s'il n'y avait pas une balise enrobante ou les fragments */}
 
-            <h3>Liste des règles strictes de JSX</h3>
+            <h3 className="lesson-title">Liste des règles strictes de JSX</h3>
             <img
                 src="https://i.imgur.com/yXOvdOSs.jpg"
                 alt="Hedy Lamarr"

@@ -1,3 +1,3 @@
 export default function () {
-    return <h3> Scientifique de renom</h3>
+    return <h4> Scientifique de renom</h4>
 }

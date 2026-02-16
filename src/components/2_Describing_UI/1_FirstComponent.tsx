@@ -29,7 +29,7 @@ export function Profile() {
 export default function Galery() {
   return (
     <>
-      <h3>Scientifiques de renom</h3>
+      <h4>Scientifiques de renom</h4>
       <Profile/>
       <Profile/>
       <Profile/>
