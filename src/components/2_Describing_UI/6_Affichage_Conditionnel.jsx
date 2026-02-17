@@ -1,4 +1,5 @@
 import "../../App.css"
+import Defi_1_Afficher_Icon_Ternaire from "./support_files/for_6/Defi_1_Afficher_Icon_Ternaire";
 function Item({ name, isPacked }) {
 
     // 1. Rendu conditionnel avec deux possibilités d'affichage de deux branches (les isPacked avec un done et les false sans done)
@@ -41,7 +42,7 @@ function Item({ name, isPacked }) {
     //     </li>
     // );
 
-    // 6. Affichage conditionnel en affectant conditionnellement du JSX à une variable au dessus du return. L'of
+    // 6. Affichage conditionnel en affectant conditionnellement du JSX à une variable au dessus du return. L'objectif dans cette première partie étant juste d'afficher dans la dct juste du texte
     // let itemContent = name;
     // if (isPacked) {
     //     itemContent = name + " ✅";
@@ -52,7 +53,7 @@ function Item({ name, isPacked }) {
     //     </li>
     // );
 
-     // 7. Affichage conditionnel en affectant conditionnellement du JSX à une variable au dessus du return. L'obejctif étant d'afficher aussi du balisage conditionnel imbriqué
+     // 7. Affichage conditionnel en affectant conditionnellement du JSX à une variable au dessus du return. L'obejctif étant d'afficher aussi du balisage conditionnel imbriqué et non pas du simple texte 
 
     let itemContent = name;
     if (isPacked) {
@@ -66,16 +67,17 @@ function Item({ name, isPacked }) {
         <li className="item">
             {itemContent}
         </li>
-    );
-
-    
+    );    
 }
 
 export default function Affichage_Conditionnel() {
     return(
         <div>
             <section>
-                <h3 className="lesson-title">Liste d’affaires de Sally Ride</h3>
+                <h3>II.Défis</h3>
+                <Defi_1_Afficher_Icon_Ternaire/>
+                <h3 className="lesson-title">I. Cours</h3>
+                <h4>Liste d’affaires de Sally Ride</h4>
                 <ul>
                     <Item
                         isPacked={true}
