@@ -3,8 +3,7 @@ import React from 'react'
 function Item({ name, isPacked }) {
   return (
     <li className="item">
-      {(isPacked ? name +"✅" : name +"❌" )}
-      
+      {isPacked ? name +"✅" : name +"❌" }  
     </li>
   );
 }
@@ -12,7 +11,7 @@ function Item({ name, isPacked }) {
 export default function Defi_1_Afficher_Icon_Ternaire() {
   return (
     <section>
-      <h1>Liste d’affaires de Sally Ride</h1>
+      <h4>Défi 1 : Afficher un icône pour les objets non traités avec ? :</h4>
       <ul>
         <Item
           isPacked={true}
