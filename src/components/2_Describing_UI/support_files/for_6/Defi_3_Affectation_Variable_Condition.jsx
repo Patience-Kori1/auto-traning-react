@@ -1,29 +1,44 @@
 import React from 'react'
 
-function Drink({ name }) {
-  let part, caffeine, age;
-  if (name === 'thé') {
-    part = 'feuille';
-    caffeine = '15–70 mg/tasse';
-    age = '4 000+ ans';
-  } else if (name === 'café') {
-    part = 'grain';
-    caffeine = '80–185 mg/tasse';
-    age = '1 000+ ans';
+const drinks = {
+  thé: {
+    part: 'feuille',
+    caffeine: '15–70 mg/tasse',
+    age: '4 000+ ans'
+  },
+  café: {
+    part: 'grain',
+    caffeine: '80–185 mg/tasse',
+    age: '1 000+ ans'
   }
-  return (
+};
+
+function Drink({ name }) {
+    // let part, caffeine, age;
+    // if (name === 'thé') {
+    //     part = 'feuille';
+    //     caffeine = '15–70 mg/tasse';
+    //     age = '4 000+ ans';
+    // } else if (name === 'café') {
+    //     part = 'grain';
+    //     caffeine = '80–185 mg/tasse';
+    //     age = '1 000+ ans';
+    // }
+    const { part, caffeine, age } = drinks[name];
+
+    return (
     <section>
-      <h1>{name}</h1>
-      <dl>
-        <dt>Partie de la plante</dt>
-        <dd>{part}</dd>
-        <dt>Dose de caféine</dt>
-        <dd>{caffeine}</dd>
-        <dt>Âge</dt>
-        <dd>{age}</dd>
-      </dl>
+        <h1>{name}</h1>
+        <dl>
+            <dt>Partie de la plante</dt>
+                <dd>{part}</dd>
+            <dt>Dose de caféine</dt>
+                <dd>{caffeine}</dd>
+            <dt>Âge</dt>
+                <dd>{age}</dd>
+        </dl>
     </section>
-  );
+    );
 }
 
 export default function Defi_3_Affectation_Variable_Condition() {
