@@ -1,6 +1,8 @@
 import "../../App.css"
 import Defi_1_Afficher_Icon_Ternaire from "./support_files/for_6/Defi_1_Afficher_Icon_Ternaire";4
 import Defi_2_Operateur_Logique_Condition_Rendu from "./support_files/for_6/Defi_2_Operateur_Logique_Condition_Rendu";
+import Defi_3_Affectation_Variable_Condition from "./support_files/for_6/Defi_3_Affectation_Variable_Condition";
+
 function Item({ name, isPacked }) {
 
     // 1. Rendu conditionnel avec deux possibilités d'affichage de deux branches (les isPacked avec un done et les false sans done)
@@ -76,6 +78,7 @@ export default function Affichage_Conditionnel() {
         <div>
             <section>
                 <h3 className=  "lesson-title">II.Défis</h3>
+                <Defi_3_Affectation_Variable_Condition/>
                 <Defi_2_Operateur_Logique_Condition_Rendu/>
                 <Defi_1_Afficher_Icon_Ternaire/>
                 <h3 className="lesson-title">I. Cours</h3>
