@@ -44,11 +44,12 @@ function Drink({ name }) {
 
 
 export default function Defi_4_Bonus_Affectation_Variable() {
-  return (
+    return (
     <div>
-        <h4>Défis Bonus</h4>
-        <Drink name="thé" />
-        <Drink name="café" />
+      <h4>Défis Bonus</h4>
+        {Object.keys(drinksData).map((drinkName) => (
+        <Drink key={drinkName} name={drinkName} />
+      ))}
     </div>
   );
 }
