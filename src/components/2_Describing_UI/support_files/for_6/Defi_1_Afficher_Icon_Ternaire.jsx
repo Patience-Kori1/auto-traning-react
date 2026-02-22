@@ -11,7 +11,7 @@ function Item({ name, isPacked }) {
 export default function Defi_1_Afficher_Icon_Ternaire() {
   return (
     <section>
-      <h4>Défi 1 : Afficher un icône pour les objets non traités avec ? :</h4>
+      <h4 className="section-title">Défi 1 : Afficher un icône pour les objets non traités avec ? :</h4>
       <ul>
         <Item
           isPacked={true}

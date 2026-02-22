@@ -45,7 +45,7 @@ function Drink({ name }) {
 export default function Defi_3_Affectation_Variable_Condition() {
   return (
     <div>
-      <h4>Défis cours</h4>
+      <h4 className="section-title">Défi 3: affectation variable</h4>
       <Drink name="thé" />
       <Drink name="café" />
     </div>
