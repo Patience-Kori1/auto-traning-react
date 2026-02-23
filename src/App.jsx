@@ -11,7 +11,7 @@ import Markup_With_Jsx from "./components/2_Describing_UI/3_Markup_With_Jsx.jsx"
 import JS_In_JSX_Accolades from "./components/2_Describing_UI/4_JS_In_JSX_Accolades.jsx"
 import Passer_Props_A_Composant from "./components/2_Describing_UI/5_Passer_Props_Composant.jsx"
 import Affichage_Conditionnel from "./components/2_Describing_UI/6_Affichage_Conditionnel.jsx"
-
+import Afficher_Des_Listes from "./components/2_Describing_UI/7_Afficher_Des_Listes.jsx"
 import './index.css'
 export default function App() {
   return(
@@ -20,6 +20,10 @@ export default function App() {
       Apprentissage React personnel <span>à base de la documentation officielle</span>
     </h1>
     <>{/* Section II. Décrire L'UI*/}
+      <div className="chapter">{/* 7. Affichage des listes*/}
+        <h2 className="chapter-title">7. Affichage des listes</h2>
+        <Afficher_Des_Listes/>
+      </div>
       <div className="chapter">{/* 6. Affichage Conditionnel*/}
         <h2 className="chapter-title">6. Affichage conditionnel</h2>
         <Affichage_Conditionnel/>
