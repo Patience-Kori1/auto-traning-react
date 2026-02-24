@@ -27,7 +27,7 @@ export default function JS_In_JSX_Accolades() {
             alt={description}
         />
 
-        <h4>Liste des tâches de {name} </h4>
+        <h4 className="section-title">Liste des tâches de {name} </h4>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
 
         <ul style={person.theme} 
@@ -38,7 +38,7 @@ export default function JS_In_JSX_Accolades() {
           <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
         </ul>
 
-        <h4>Liste de tâches pour {formatDate(today)}</h4>
+        <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
         <ul style={{
             backgroundColor: 'black',
             color: 'pink'
