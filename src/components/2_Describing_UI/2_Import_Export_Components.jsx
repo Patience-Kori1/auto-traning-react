@@ -4,11 +4,11 @@ import { Button, Text } from './support_files/ButtonText'
 
 export function Import_Export_Components() {
     return(
-        <>
+        <div>
             <Gallery/>
             <Profile/>
             <Text/>
             <Button/>
-        </>
+        </div>
     )
 }

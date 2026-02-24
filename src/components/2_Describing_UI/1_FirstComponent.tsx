@@ -2,7 +2,7 @@
 function FirstComponent() {
   return (
     <article>
-      <h3>Mon composant</h3>
+      <h3 className="section-title">Mon composant</h3>
       <ol>
         <li>Les composants : les blocs de construction de l’UI</li>
         <li>Définir un composant</li>
@@ -29,7 +29,7 @@ export function Profile() {
 export default function Galery() {
   return (
     <>
-      <h4>Scientifiques de renom</h4>
+      <h4 className="section-title">Scientifiques de renom</h4>
       <Profile/>
       <Profile/>
       <Profile/>
