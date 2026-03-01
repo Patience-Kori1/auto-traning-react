@@ -10,5 +10,9 @@ const people = [
 
 export default function Affichage_Liste_Tableau_Données() {
   const listItems = people.map(person => <li>{person}</li>);
-  return <ul>{listItems}</ul>;
+  return (
+    <>
+      <ul>{listItems}</ul>
+    </>
+  );
 }

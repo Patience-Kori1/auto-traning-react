@@ -5,7 +5,8 @@ export default function Afficher_Des_Listes() {
 
    return(
     <>
-        <Affichage_Liste_Tableau_Données/>
+      <h3  className=  "lesson-title">I. Cours</h3>
+      <Affichage_Liste_Tableau_Données/>
     </>
    )
 }
