@@ -81,25 +81,33 @@ export default function Affichage_Conditionnel() {
                 <div className="sub-section">
                     <Defi_4_Bonus_Affectation_Variable/>
                 </div>
-                <Defi_3_Affectation_Variable_Condition/>
-                <Defi_2_Operateur_Logique_Condition_Rendu/>
+                <div className="sub-section">
+                    <Defi_3_Affectation_Variable_Condition/>
+                </div>
+                 <div className="sub-section">
+                    <Defi_2_Operateur_Logique_Condition_Rendu/>
+                </div>
+                 <div className="sub-section">
                 <Defi_1_Afficher_Icon_Ternaire/>
+                </div>
                 <h3 className="lesson-title">I. Cours</h3>
-                <h4 className="section-title">Liste d’affaires de Sally Ride</h4>
-                <ul>
-                    <Item
-                        isPacked={true}
-                        name="Combinaison spatiale"
-                    />
-                    <Item
-                        isPacked={true}
-                        name="Casque à feuille d’or"
-                    />
-                    <Item
-                        isPacked={false}
-                        name="Photo de Tam"
-                    />
-                </ul>
+                <div className="sub-section">
+                    <h4 className="section-title">Liste d’affaires de Sally Ride</h4>
+                    <ul>
+                        <Item
+                            isPacked={true}
+                            name="Combinaison spatiale"
+                        />
+                        <Item
+                            isPacked={true}
+                            name="Casque à feuille d’or"
+                        />
+                        <Item
+                            isPacked={false}
+                            name="Photo de Tam"
+                        />
+                    </ul>
+                </div>
             </section>    
         </div>
     )
