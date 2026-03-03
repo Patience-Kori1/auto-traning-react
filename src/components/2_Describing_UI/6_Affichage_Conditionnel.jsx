@@ -84,10 +84,10 @@ export default function Affichage_Conditionnel() {
                 <div className="sub-section">
                     <Defi_3_Affectation_Variable_Condition/>
                 </div>
-                 <div className="sub-section">
+                <div className="sub-section">
                     <Defi_2_Operateur_Logique_Condition_Rendu/>
                 </div>
-                 <div className="sub-section">
+                <div className="sub-section">
                 <Defi_1_Afficher_Icon_Ternaire/>
                 </div>
                 <h3 className="lesson-title">I. Cours</h3>
