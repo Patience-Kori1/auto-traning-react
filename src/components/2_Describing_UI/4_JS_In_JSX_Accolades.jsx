@@ -21,33 +21,34 @@ export default function JS_In_JSX_Accolades() {
 
   return (
     <>
-        <img
-            className="avatar"
-            src={avatar}
-            alt={description}
-        />
+      <img
+          className="avatar"
+          src={avatar}
+          alt={description}
+      />
+      
+      <h4 className="section-title">Liste des tâches de {name} </h4>
+      <div className="sub-section">
+      <h3>Ce {formatDate(today)} on appris comment : </h3>
 
-        <h4 className="section-title">Liste des tâches de {name} </h4>
-        <h3>Ce {formatDate(today)} on appris comment : </h3>
-
-        <ul style={person.theme} 
-        >
-          <li>passer des chaînes de caractères grâce aux guillemets </li>
-          <li>référencer une variable JavaScript dans du JSX grâce aux accolades.</li>
-          <li>appeler une fonction JavaScript dans du JSX grâce aux accolades.</li>
-          <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
-        </ul>
-
-        <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
-        <ul style={{
-            backgroundColor: 'black',
-            color: 'pink'
-          }}
-        >
-          <li>Améliorer le visiophone { person.name} </li>
-          <li>Préparer les cours d’aéronautique</li>
-          <li>Travailler sur un moteur à alcool</li>
-        </ul>   
+      <ul style={person.theme} 
+      >
+        <li>passer des chaînes de caractères grâce aux guillemets </li>
+        <li>référencer une variable JavaScript dans du JSX grâce aux accolades.</li>
+        <li>appeler une fonction JavaScript dans du JSX grâce aux accolades.</li>
+        <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
+      </ul>
+      <div className="sub-section"></div>
+      <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
+      <ul style={{
+          backgroundColor: 'black',
+          color: 'pink'
+        }}
+      >
+        <li>Améliorer le visiophone { person.name} </li>
+        <li>Préparer les cours d’aéronautique</li>
+        <li>Travailler sur un moteur à alcool</li>
+      </ul>   
     </>
   );
 }
