@@ -25,7 +25,6 @@ export default function Gallery() {
       <h4 className="section-title">A. Extraire un composant</h4>
       <div className="sub-section">
         <h4>Scientifiques remarquables</h4>
-        <div className="sub-section"></div>
         {
           person.map((personItem, index) => {
             return(
