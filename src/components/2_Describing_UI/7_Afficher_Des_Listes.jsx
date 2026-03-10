@@ -6,7 +6,9 @@ export default function Afficher_Des_Listes() {
    return(
     <>
       <h3  className=  "lesson-title">I. Cours</h3>
-      <Affichage_Liste_Tableau_Données/>
+      <div className="sub-section">
+        <Affichage_Liste_Tableau_Données/>
+      </div>
     </>
    )
 }
