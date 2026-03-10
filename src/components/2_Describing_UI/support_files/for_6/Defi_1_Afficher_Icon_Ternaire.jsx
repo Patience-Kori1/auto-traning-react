@@ -12,20 +12,22 @@ export default function Defi_1_Afficher_Icon_Ternaire() {
   return (
     <section>
       <h4 className="section-title">Défi 1 : Afficher un icône pour les objets non traités avec ? :</h4>
-      <ul>
-        <Item
-          isPacked={true}
-          name="Combinaison spatiale"
-        />
-        <Item
-          isPacked={true}
-          name="Casque à feuille d’or"
-        />
-        <Item
-          isPacked={false}
-          name="Photo de Tam"
-        />
-      </ul>
+      <div className="sub-section">
+        <ul>
+          <Item
+            isPacked={true}
+            name="Combinaison spatiale"
+          />
+          <Item
+            isPacked={true}
+            name="Casque à feuille d’or"
+          />
+          <Item
+            isPacked={false}
+            name="Photo de Tam"
+          />
+        </ul>
+      </div>
     </section>
   );
 }

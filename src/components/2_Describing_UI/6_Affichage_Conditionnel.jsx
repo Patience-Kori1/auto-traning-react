@@ -83,21 +83,23 @@ export default function Affichage_Conditionnel() {
                 <Defi_2_Operateur_Logique_Condition_Rendu/>
                 <Defi_1_Afficher_Icon_Ternaire/>
                 <h3 className="lesson-title">I. Cours</h3>
-                <h4 className="section-title">Liste d’affaires de Sally Ride</h4>
-                <ul>
-                    <Item
-                        isPacked={true}
-                        name="Combinaison spatiale"
-                    />
-                    <Item
-                        isPacked={true}
-                        name="Casque à feuille d’or"
-                    />
-                    <Item
-                        isPacked={false}
-                        name="Photo de Tam"
-                    />
-                </ul>
+                <h4 className="section-title">Liste d’affaires de Sally Ride</h4>7
+                <div className="sub-section">
+                    <ul>
+                        <Item
+                            isPacked={true}
+                            name="Combinaison spatiale"
+                        />
+                        <Item
+                            isPacked={true}
+                            name="Casque à feuille d’or"
+                        />
+                        <Item
+                            isPacked={false}
+                            name="Photo de Tam"
+                        />
+                    </ul>
+                </div>
             </section>    
         </div>
     )
