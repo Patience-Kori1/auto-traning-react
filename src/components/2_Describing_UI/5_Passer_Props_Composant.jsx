@@ -49,29 +49,31 @@ export default function Passer_Props_A_Composant() {
       <h3 className="lesson-title">II. Défis</h3>
       <Gallery/>
       <h3 className="lesson-title">I. Cours</h3>
-      <Card>
+      <div className="sub-section">
+        <Card>
+          <Avatar
+            size={100}
+            person={{
+              name: 'Katsuko Saruhashi',
+              imageId: 'YfeOqp2'
+            }}
+          />
+        </Card>
         <Avatar
-          size={100}
+          size={80}
           person={{
-            name: 'Katsuko Saruhashi',
-            imageId: 'YfeOqp2'
+            name: 'Aklilu Lemma',
+            imageId: 'OKS67lh'
           }}
         />
-      </Card>
-      <Avatar
-        size={80}
-        person={{
-          name: 'Aklilu Lemma',
-          imageId: 'OKS67lh'
-        }}
-      />
-      <Avatar
-        size={50}
-        person={{
-          name: 'Lin Lanying',
-          imageId: '1bX5QH6'
-        }}
-      />
+        <Avatar
+          size={50}
+          person={{
+            name: 'Lin Lanying',
+            imageId: '1bX5QH6'
+          }}
+        />
+      </div>
     </div>
   );
 }
