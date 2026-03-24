@@ -31,7 +31,7 @@ export default function JS_In_JSX_Accolades() {
       <div className="sub-section">
         <h4 className="section-title">Liste des tâches de {name} </h4>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
-      </div>
+      
         <ul style={person.theme} 
         >
           <li>passer des chaînes de caractères grâce aux guillemets </li>
@@ -39,7 +39,8 @@ export default function JS_In_JSX_Accolades() {
           <li>appeler une fonction JavaScript dans du JSX grâce aux accolades.</li>
           <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
         </ul>
-
+      </div>
+      <div className="sub-section">
         <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
         <ul style={{
             backgroundColor: 'black',
@@ -50,6 +51,7 @@ export default function JS_In_JSX_Accolades() {
           <li>Préparer les cours d’aéronautique</li>
           <li>Travailler sur un moteur à alcool</li>
         </ul>   
+      </div>
     </>
   );
 }
