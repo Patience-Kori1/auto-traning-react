@@ -9,8 +9,12 @@ export function Import_Export_Components() {
                 <Gallery/>
                 <Profile/>
             </div>
-            <Text/>
-            <Button/>
+            <div className="sub-section">
+                <Text/>
+            </div>
+            <div className="sub-section">
+                <Button/>
+            </div>
         </div>
     )
 }
