@@ -30,9 +30,11 @@ export default function Galery() {
   return (
     <>
       <h4 className="section-title">Scientifiques de renom</h4>
-      <Profile/>
-      <Profile/>
-      <Profile/>
+      <div className="sub-section">
+        <Profile/>
+        <Profile/>
+        <Profile/>
+      </div>
       <FirstComponent/>
     </>
   )
