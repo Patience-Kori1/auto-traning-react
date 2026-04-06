@@ -49,6 +49,7 @@ export default function Passer_Props_A_Composant() {
       <h3 className="lesson-title">II. Défis</h3>
       <Gallery/>
       <h3 className="lesson-title">I. Cours</h3>
+      
       <Card>
         <Avatar
           size={100}
