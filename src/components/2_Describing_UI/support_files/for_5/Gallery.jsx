@@ -14,12 +14,11 @@ export default function Gallery() {
   return (
     <div>
       <h4 className="section-title"> C. Passer du JSX dans la prop Children </h4>
-      <div>
+      <div className="sub-section">
         <Profile3/>
       </div>
       <h4 className="section-title">B. Ajuster la taille d'une image</h4>
       <div>
-        <h3></h3>
         <Profile2/>
       </div>
       <h4 className="section-title">A. Extraire un composant</h4>
