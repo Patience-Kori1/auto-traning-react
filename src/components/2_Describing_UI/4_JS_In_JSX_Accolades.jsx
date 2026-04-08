@@ -28,7 +28,7 @@ export default function JS_In_JSX_Accolades() {
             alt={description}
         />
       </div>
-
+      <div className="sub-section">
         <h4 className="section-title">Liste des tâches de {name} </h4>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
 
@@ -39,6 +39,7 @@ export default function JS_In_JSX_Accolades() {
           <li>appeler une fonction JavaScript dans du JSX grâce aux accolades.</li>
           <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
         </ul>
+      </div>
 
         <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
         <ul style={{
