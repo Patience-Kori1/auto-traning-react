@@ -40,7 +40,7 @@ export default function JS_In_JSX_Accolades() {
           <li>utiliser un objet JavaScript dans du JSX grâce aux accolades.</li>
         </ul>
       </div>
-
+      <div className="sub-section">
         <h4 className="section-title">Liste de tâches pour {formatDate(today)}</h4>
         <ul style={{
             backgroundColor: 'black',
@@ -50,7 +50,8 @@ export default function JS_In_JSX_Accolades() {
           <li>Améliorer le visiophone { person.name} </li>
           <li>Préparer les cours d’aéronautique</li>
           <li>Travailler sur un moteur à alcool</li>
-        </ul>   
+        </ul>
+      </div>   
     </>
   );
 }
