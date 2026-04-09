@@ -3,7 +3,6 @@ export default function JS_In_JSX_Accolades() {
   const description = 'Gregorio Y. Zara';
   const name = 'Hedy Lamarr';
   const today = new Date();
-
   const person = {
     name: 'Gregorio Y. Zara',
     theme: {
@@ -18,7 +17,6 @@ export default function JS_In_JSX_Accolades() {
       { weekday: 'long' }
     ).format(date);
   }
-
   return (
     <>
       <div className="sub-section">
@@ -31,7 +29,6 @@ export default function JS_In_JSX_Accolades() {
       <div className="sub-section">
         <h4 className="section-title">Liste des tâches de {name} </h4>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
-
         <ul style={person.theme} 
         >
           <li>passer des chaînes de caractères grâce aux guillemets </li>
