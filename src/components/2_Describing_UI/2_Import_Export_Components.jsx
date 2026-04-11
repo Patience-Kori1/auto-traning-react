@@ -6,11 +6,17 @@ export function Import_Export_Components() {
     return(
         <div>
             <div className="sub-section">
-            <Gallery/>
+                <Gallery/>
             </div>
-            <Profile/>
-            <Text/>
-            <Button/>
+            <div className="sub-section">
+                <Profile/>
+            </div>
+            <div className="sub-section">
+                <Text/>
+            </div>
+            <div className="sub-section">
+                <Button/>
+            </div>
         </div>
     )
 }
