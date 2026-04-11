@@ -5,7 +5,9 @@ import { Button, Text } from './support_files/ButtonText'
 export function Import_Export_Components() {
     return(
         <div>
+            <div className="sub-section">
             <Gallery/>
+            </div>
             <Profile/>
             <Text/>
             <Button/>
