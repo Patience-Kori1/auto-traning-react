@@ -18,12 +18,11 @@ export default function Gallery() {
         <Profile3/>
       </div>
       <h4 className="section-title">B. Ajuster la taille d'une image</h4>
-      <div>
-        <h3></h3>
+      <div className="sub-section">
         <Profile2/>
       </div>
       <h4 className="section-title">A. Extraire un composant</h4>
-      <div>
+       <div className="sub-section">
         <h4>Scientifiques remarquables</h4>
         {
           person.map((personItem, index) => {
