@@ -22,7 +22,7 @@ export default function Gallery() {
         <Profile2/>
       </div>
       <h4 className="section-title">A. Extraire un composant</h4>
-       <div className="sub-section">
+      <div className="sub-section">
         <h4>Scientifiques remarquables</h4>
         {
           person.map((personItem, index) => {
