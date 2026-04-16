@@ -4,13 +4,10 @@ import Profile2 from './defis2_Ajuster_Taille_Image';
 import Profile3 from './defi_3_Passer_JSX_Prop_Children';
 
 export default function Gallery() {
-
   const person =[
     {name: "Maria Skłodowska-Curie", job: "physicienne et chimiste",reward: ["Prix Nobel de Physique", "Prix Nobel de Chimie", "Médaille Davy", "Médaille Matteucci"], discovery: "le Polonium (élément chimique)", imageId:"szV5sdG"},
     {name:"Katsuko Saruhashi", job: "geochimiste", reward: ["Prix Miyake de géochimie", "Prix Tanaka"], discovery: "le Polonium (élément chimique)", imageId:"YfeOqp2"},
-
   ]
-  
   return (
     <div>
       <h4 className="section-title"> C. Passer du JSX dans la prop Children </h4>
@@ -35,7 +32,6 @@ export default function Gallery() {
           })
         }
       </div>
-    
     </div>
   );
 }

@@ -33,8 +33,6 @@ function Avatar({ person, size }) {
     />
   );
 }
-
-
 function Card({ children }) {
   return (
     <div style={{ backgroundColor:"#ead6b2", width:120,  borderRadius: "20px"}}>
@@ -60,20 +58,22 @@ export default function Passer_Props_A_Composant() {
           />
         </Card>
       </div>
-      <Avatar
-        size={80}
-        person={{
-          name: 'Aklilu Lemma',
-          imageId: 'OKS67lh'
-        }}
+      <div className="sub-section">
+        <Avatar
+          size={80}
+          person={{
+            name: 'Aklilu Lemma',
+            imageId: 'OKS67lh'
+          }}
+        />
+        <Avatar
+          size={50}
+          person={{
+            name: 'Lin Lanying',
+            imageId: '1bX5QH6'
+          }}
       />
-      <Avatar
-        size={50}
-        person={{
-          name: 'Lin Lanying',
-          imageId: '1bX5QH6'
-        }}
-      />
+      </div>
     </div>
   );
 }
