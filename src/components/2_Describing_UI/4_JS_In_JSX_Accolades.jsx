@@ -21,11 +21,13 @@ export default function JS_In_JSX_Accolades() {
 
   return (
     <>
+      <div className="sub-section">
         <img
             className="avatar"
             src={avatar}
             alt={description}
         />
+      </div>
 
         <h4 className="section-title">Liste des tâches de {name} </h4>
         <h3>Ce {formatDate(today)} on appris comment : </h3>
