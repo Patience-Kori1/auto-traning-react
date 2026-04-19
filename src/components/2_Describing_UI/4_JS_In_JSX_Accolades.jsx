@@ -3,7 +3,6 @@ export default function JS_In_JSX_Accolades() {
   const description = 'Gregorio Y. Zara';
   const name = 'Hedy Lamarr';
   const today = new Date();
-
   const person = {
     name: 'Gregorio Y. Zara',
     theme: {
@@ -11,14 +10,12 @@ export default function JS_In_JSX_Accolades() {
       color: 'pink'
     }
   };
-
   function formatDate(date) {
     return new Intl.DateTimeFormat(
       'fr-FR',
       { weekday: 'long' }
     ).format(date);
   }
-
   return (
     <>
       <div className="sub-section">

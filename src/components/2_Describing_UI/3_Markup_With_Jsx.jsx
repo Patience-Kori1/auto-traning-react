@@ -2,7 +2,6 @@ export default function Markup_With_Jsx() {
     return (
         <> 
         {/* Ces balises en bas ne marcherait pas s'il n'y avait pas une balise enrobante ou les fragments */}
-
             <h3 className="lesson-title">Liste des règles strictes de JSX</h3>
             <div className="sub-section">
                 <img
