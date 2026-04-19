@@ -72,7 +72,6 @@ function Item({ name, isPacked }) {
         </li>
     );    
 }
-
 export default function Affichage_Conditionnel() {
     return(
         <div>

@@ -40,7 +40,6 @@ function Card({ children }) {
     </div>
   );
 }
-
 export default function Passer_Props_A_Composant() {
   return (
     <div>
