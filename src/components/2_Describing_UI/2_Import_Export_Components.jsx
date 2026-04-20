@@ -14,7 +14,9 @@ export function Import_Export_Components() {
             <div className="sub-section">
                 <Text/>
             </div>
-            <Button/>
+            <div className="sub-section">
+                <Button/>
+            </div>
         </div>
     )
 }
