@@ -7,7 +7,6 @@ const people = [
     'Percy Lavon Julian : chimiste',
     'Subrahmanyan Chandrasekhar : astrophysicien',
 ];
-
 export default function Affichage_Liste_Tableau_Données() {
   const listItems = people.map(person => <li>{person}</li>);
   return (

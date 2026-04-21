@@ -24,13 +24,13 @@ export function Profile() {
       />
   )
 }
-
-
 export default function Galery() {
   return (
     <>
       <h4 className="section-title">Scientifiques de renom</h4>
-      <Profile/>
+      <div className="sub-section">
+       <Profile/>
+      </div>
       <Profile/>
       <Profile/>
       <FirstComponent/>

@@ -7,7 +7,6 @@ function Item({ name, isPacked }) {
     </li>
   );
 }
-
 export default function Defi_1_Afficher_Icon_Ternaire() {
   return (
     <section>
